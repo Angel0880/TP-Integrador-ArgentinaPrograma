@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title> DULSOSO </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="hero">
+
+      <nav class="nav container">
+
+        <div class="nav__hamburguer">
+          <img src="./images/icon-hamburger.svg" class="nav__button" alt="menu" aria-label="menu">
+        </div>
+
+        <div class="nav__container">
+
+          <ul class="nav__list container">
+
+            <li class="nav__element">
+              <a href="#desayuno" class="nav__link"> ELEGIR DESAYUNO </a>
+            </li>
+
+            <li class="nav__element">
+              <a href="#proceso" class="nav__link"> COTIZACION </a>
+            </li>
+
+            <li class="nav__element">
+              <a href="#nosotros" class="nav__link">NOSOTROS</a>
+            </li>
+
+            <li class="nav__element">
+              <a href="#about" class="nav__link nav__link--last">CONTACTO</a>
+            </li>
+
+          </ul>
+
+          <div class="nav__social">
+
+            <a href="https://www.instagram.com/dulsoso.dulces_ricos/"  target="_blank">
+              
+              <img src="./images/icon-instagram.svg">
+
+            </a> 
+    
+          </div>
+
+        </div>
+
+        
+      </nav>
+
+      <section>
+
+        <figure class="hero__figure">
+          <img src=./images/1.jpeg class="hero__img">
+        </figure>
+
+        <article class="hero__texts">
+          <h1 class="hero__title"> DULDOSO</h1>
+          <p class="hero__paragraph"> DESAYUNOS SORPRESA EN LA CIUDAD DE CORDOBA CAPITAL PARA ESA PERSONA ESPECIAL.</p>
+
+        </article>
+
+      </section>
+
+    </header>
+
+    <main class="main">
+
+      <section class="features container">
+
+        <div class="features__content" id="desayuno">
+
+          <h2 class="features__title">NUESTRAS OPCIONES</h2>
+          <p class="features__paragraph">ABAJO PUEDES OBSERVAR NUESTRAS OPCIONES DE DESAYUNO TANTO DULCES COMO SALADAS.</p>
+
+          <ul class="features__list">
+
+            <li class="features__element">
+              <a href="#" class="features__tab features__tab--active" data-article="1"> DESAYUNO SIMPLE </a>
+            </li>
+
+            <li class="features__element">
+              <a href="#" class="features__tab" data-article="2"> MERIENDA SALADA </a>
+            </li>
+
+            <li class="features__element">
+              <a href="#" class="features__tab" data-article="3"> MERIENDA PERSONALIZADA </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="features__container">
+
+          <article class="features__article features__article--active">
+
+            <figure class="features__figure">
+
+              <img src="./images/2.jpeg" class="features__img">
+
+            </figure>
+
+          </article>
+
+          <article class="features__article">
+
+            <figure class="features__figure">
+
+              <img src="./images/3.jpeg" class="features__img">
+
+            </figure>
+
+          </article>
+
+          <article class="features__article">
+
+            <figure class="features__figure">
+
+              <img src="./images/4.jpeg" class="features__img">
+
+            </figure>
+
+          </article>
+
+
+        </div>
+
+      </section>
+      
+      <section class="cotizacion" id="cotiz">
+        <h2 class="cotizacion-titulo">Solicitud de Cotización</h2>
+        <form class="cotizacion-formulario" id="formularioProceso" method="post">
+          <div class="cotizacion-campo">
+            <label class="cotizacion-etiqueta" >Nombre del desayuno:</label>
+            <input class="cotizacion-entrada" type="text" id="nombreDesayuno" name="nombreDesayuno">
+          </div>
+          <div class="cotizacion-campo">
+            <label class="cotizacion-etiqueta">Cantidad:</label>
+            <input class="cotizacion-entrada" type="number" id="cantidadDesayuno" name="cantidadDesayuno">
+          </div>
+          <button type="submit" class="cotizacion-boton" > ENVIAR </button>
+        </form>
+      </section>
+      
+      <div class="grid-container" id="presentacion">
+        <div class="grid-item">
+          <h2 class="features__subtitle"> Presentación Personal </h2>
+          <p class="features__copy"> 
+            Hola somos Jacky y Angel. Tenemos 22 años. Diseñamos esta página para que puedas ordenar un regalo especial.
+            Esperemos que lo disfrutes.
+          </p>
+        </div>
+        <div class="grid-item">
+          <h2 class="features__subtitle"> Presentación de la Organización </h2>
+          <p class="features__copy"> Hola somos DULSOSO, preparamos tu desayuno sorpresa y entregamos a domicilio
+            en Córdoba Capital. Puedes observar en nuestra página diferentes opciones, como ver los productos, 
+            solicitar cotización, consultar medios de pago, ver nuestra red social, entre otras cosas. Esperamos su consulta 
+          </p>
+        </div>
+      </div>
+  
+      <div class="download__container">
+
+        <article class="download__item">
+          
+          <div class="contenedor" id="cont">
+            <h2 class="titulo-footer">Contactanos</h2>
+            <h3 class="subtitulo-footer">Lo apreciaríamos mucho</h3>
+            <div class="footer">
+              <form action="#" name="contact">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+                <button type="submit" class="download__extension"> ENVIAR </button>
+              </form>
+            </div>
+          </div>
+      
+        </article>
+
+      </div>
+      
+    </main>
+    
+    <script src="./js/main.js"></script>
+    <script src="./js/validate.js"></script>
+    
+  </body>
+</html>
